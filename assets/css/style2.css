@@ -118,6 +118,36 @@ html{
     font-weight: 700;
 }
 
+#content .content-section{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-header{
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-header{
+    margin: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    margin: 1px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
 #content{
 
 }
