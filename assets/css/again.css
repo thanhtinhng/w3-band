@@ -20,6 +20,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #nav{
@@ -125,7 +126,7 @@ html{
     padding: 64px 16px;
 }
 
-#content .section-header{
+#content .section-heading{
     margin: 10px;
     text-align: center;
     font-size: 30px;
@@ -133,7 +134,7 @@ html{
     letter-spacing: 4px;
 }
 
-#content .section-sub-header{
+#content .section-sub-heading{
     margin: 15px;
     text-align: center;
     font-size: 15px;
@@ -148,8 +149,25 @@ html{
     line-height: 1.4;
 }
 
-#content{
+.member-section{
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    text-align: center;
+}
 
+.member-section .member{
+    width: 33.33333%;
+}
+
+.member .member-name{
+    margin: 15px;
+}
+
+.member .member-img{
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 5px;
 }
 
 #footer{

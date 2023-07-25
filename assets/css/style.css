@@ -24,6 +24,7 @@ html{
     background-color: black;
     height: var(--header-height);
     z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #nav{
@@ -154,7 +155,7 @@ html{
 }
 
 #content .section-heading{
-    margin-bottom: 10px;
+    margin: 10px;
     font-size: 30px;
     text-align: center;
     font-weight: 500;
@@ -162,17 +163,41 @@ html{
 }
 
 #content .section-sub-heading{
-    margin: 15px;
+    margin: 20px;
     font-size: 15px;
     text-align: center;
     font-style: italic;
     opacity: 0.6;
 }
 #content .about-text {
+    margin: 20px;
     font-size: 15px;
     line-height: 1.4;
     text-align: justify;
 }
+
+.member-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 32px;
+}
+
+.member-section .member{
+    width: 33.33333%;
+}
+
+.member-section .member-name{
+    margin: 15px;
+}
+
+.member-section .member-img{
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+
 
 #footer {
 
