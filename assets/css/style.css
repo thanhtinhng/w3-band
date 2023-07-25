@@ -100,13 +100,22 @@ html{
 }
 
 #slider {
+    position: relative;
     margin-top: var(--header-height);
-    padding-top: 50%; 
-    background-image: url(/assets/img/chicago.jpg);
+    /* padding-top: 50%;  */
+    /* background-image: url(/assets/img/chicago.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: contain;
-    position: relative;
+    background-size: contain; */
+}
+
+#slider .slider-img{
+    text-align: center;
+}
+
+#slider .slider-img img{
+    width: 100%;
+    border-style: none;
 }
 
 #slider .text-content{
