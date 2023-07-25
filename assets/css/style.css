@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-height: 46px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: var(--header-height);
+    z-index: 1;
+}
+
+#nav{
+    display: flex;
+    position: relative;
+}
+
+#nav li{
+    list-style: none;
+    position: relative;
+}
+
+#nav li a{
+    color: white;
+    text-decoration: none;
+    line-height: var(--header-height);
+    padding: 0 24px;
+
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a,
+.subnav li:hover a
+{
+    color: black;
+    background-color: #ccc;
+    display: block;
+}
+
+#nav .subnav{
+    display: none;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0px 16px;
+    line-height: 38px;
+}
+
+#nav li .dropdown-icon{
+    font-size: 12px;
+}
+
+.search-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.search-button .search-icon{
+    color: white;
+    font-size: 24px;
+    line-height: var(--header-height);
+    padding: 0 19px;
+    
+}
+
+#slider {
+    margin-top: var(--header-height);
+    padding-top: 50%; 
+    background-image: url(/assets/img/chicago.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    position: relative;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    /* Căn giữa cách 1: (dùng trong trường hợp có position absolute 
+    left: 50%;
+    transform: translateX(-50%); */
+    /* căn giữa cách 2:
+    left: 0;
+    right: 0; */
+    /* căn giữa cách 3: */
+    width: 100%;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    padding-top: 25px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
