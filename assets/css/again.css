@@ -12,6 +12,10 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.white-text{
+    color:#fff !important;
+}
+
 #header{
     height: var(--header-height);
     background-color: black;
@@ -168,6 +172,95 @@ html{
     width: 154px;
     margin-bottom: 16px;
     border-radius: 5px;
+}
+
+.tour-section{
+    background-color: #000;
+}
+
+.ticket-list{
+    background-color: #fff;
+}
+
+.ticket-list li{
+    list-style: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 10px 16px;
+    border-bottom: #757575 1px solid;
+}
+
+.ticket-list .sold-out{
+    margin-left: 16px;
+    color: #fff;
+    background-color: #f44336;
+    padding: 4px 6px;
+}
+
+.ticket-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 8px;
+    margin-top: -3px;
+}
+
+.place{
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.place .place-item{
+    width: 33.33333%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.place .place-item img{
+    width: 100%;
+    display: block;
+}
+
+.place .place-item img:hover{
+    opacity: 0.6;
+}
+
+.place-item .place-info{
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+
+.place-item .place-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.place-item .place-date{
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.place-item .place-desc{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.place .buy-button{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: #000;
+    margin-bottom: 15px;
+    padding: 8px 16px;
 }
 
 #footer{
