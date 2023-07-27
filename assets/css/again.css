@@ -16,6 +16,21 @@ html{
     color:#fff !important;
 }
 
+.col{
+    display: flex;
+    justify-content: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col-three{
+    width: 33.3333%;
+}
+
+.col-half{
+    width: 50%;
+}
+
 #header{
     height: var(--header-height);
     background-color: black;
@@ -154,14 +169,14 @@ html{
 }
 
 .member-section{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     padding: 32px;
     text-align: center;
 }
 
 .member-section .member{
-    width: 33.33333%;
+    /* width: 33.33333%; */
 }
 
 .member .member-name{
@@ -211,15 +226,15 @@ html{
 }
 
 .place{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     padding: 32px 0px;
-    margin-left: -8px;
-    margin-right: -8px;
+    /* margin-left: -8px;
+    margin-right: -8px; */
 }
 
 .place .place-item{
-    width: 33.33333%;
+    /* width: 33.33333%; */
     margin-bottom: 16px;
     padding: 0 8px;
 }
@@ -263,6 +278,95 @@ html{
     padding: 8px 16px;
 }
 
+.modal{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    position: relative;
+    width: 900px;
+    background-color: #fff;
+    animation: modalFadeIn 0.5s ease;
+}
+
+.modal-header{
+    background-color: #009688;
+    color: #fff;
+    font-size: 30px;
+    padding: 42px 16px;
+    text-align: center;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    color: #fff;
+}
+
+.modal-close:hover{
+    background-color: #f44336;
+}
+
+.modal-body{
+    padding: 16px;
+    font-size: 16px;
+}
+
+.modal-body input{
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding: 16px;
+    width: 100%;
+    border: 1px #ccc solid;
+}
+
+.pay-button{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #009688;
+    padding: 16px;
+}
+
+.pay-button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-footer{
+    padding: 16px;
+    float: right;
+}
+
+.modal-footer .need-help{
+    margin-bottom: 12px;
+}
+
 #footer{
 
+}
+
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
