@@ -436,10 +436,36 @@ html{
 .map .map-img{
     width: 100%;
     text-align: center;
+    display: block;
 }
 
 #footer {
+    padding:64px 16px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
 
+#footer i{
+    display: inline-block;
+    opacity: 0.6;
+    margin-bottom: 8px;
+    font-size: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#footer i:hover{
+    opacity: 0.3;
+}
+
+#footer p{
+    margin: 15px;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+#footer p a{
+    color: #000;
 }
 
 @keyframes modalFadeIn{
